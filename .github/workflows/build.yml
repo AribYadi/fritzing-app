@@ -15,7 +15,7 @@ jobs:
       - name: install qt
         uses: jurplel/install-qt-action@v4
         with:
-          version: 6.5.10
+          version: 6.5.3
       - uses: msys2/setup-msys2@v2
         with:
           update: true
