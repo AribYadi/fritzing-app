@@ -22,7 +22,7 @@ jobs:
       - name: Put MSYS2_MinGW64 on PATH
         run: echo "D:/a/_temp/msys64/mingw64/bin" >> $GITHUB_PATH
       - name: generate makefiles
-        run: qmake -o Makefile phoenix.pro
+        run: qmake -spec win32-g++ phoenix.pro
       - name: run make
         run: make release
       - name: capture build artifacts
